@@ -1,5 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Sun Apr 07 18:51:45 MSK 2024","Sun Apr 07 18:51:46 MSK 2024","1111","","ProductTest","","ProductTest","getProductsTest","Get products",""
-"broken","Sun Apr 07 18:39:07 MSK 2024","Sun Apr 07 18:39:07 MSK 2024","2","","ProductTest","","ProductTest","","ProductTest",""
-"passed","Sun Apr 07 18:52:02 MSK 2024","Sun Apr 07 18:52:06 MSK 2024","4415","","UserTest","","UserTest","registerUserTest","Register user test",""
-"passed","Sun Apr 07 18:52:14 MSK 2024","Sun Apr 07 18:52:19 MSK 2024","4822","","UserTest","","UserTest","loginUserTest","login user test",""
