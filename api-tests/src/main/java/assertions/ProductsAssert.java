@@ -1,6 +1,7 @@
 package assertions;
 
-import dto.request.DTOProducts;
+import dto.DTOProducts;
+import io.qameta.allure.Step;
 import io.restassured.response.Response;
 import org.assertj.core.api.AbstractAssert;
 
@@ -15,6 +16,7 @@ public class ProductsAssert extends AbstractAssert<ProductsAssert, Response> {
         return new ProductsAssert(actual);
     }
 
+    @Step("Проверка кода ответа")
     public ProductsAssert getProductResponse(DTOProducts DTOProducts) {
         BasicAsserts.assertThat(actual)
                 .statusCodeIsEqual(SC_OK);

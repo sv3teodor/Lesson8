@@ -32,7 +32,7 @@ public class CheckBoxPageAsserts extends AbstractAssert<CheckBoxPageAsserts, Che
         actual.checkBoxes
                 .get(elementIndex)
                 .as("Значение аттрибута" + attribName + " не соответствует ожидаемому" + targetValue)
-                .should(Condition.attribute(attribName,targetValue));
+                .should(Condition.attribute(attribName, targetValue));
         return this;
     }
 
@@ -41,7 +41,6 @@ public class CheckBoxPageAsserts extends AbstractAssert<CheckBoxPageAsserts, Che
         actual.checkBoxes.get(elementIndex).should(checked);
         return this;
     }
-
 
 
 }
