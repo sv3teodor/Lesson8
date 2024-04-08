@@ -1,6 +1,6 @@
 package endpoints;
 
-import dto.request.DTOUserProfile;
+import dto.DTOUserProfile;
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
 import org.aeonbits.owner.ConfigFactory;
@@ -10,8 +10,6 @@ import utils.RestApiBuilder;
 public class AuthApi {
     static ApiProperites prop = ConfigFactory.create(ApiProperites.class);
 
-    AuthApi() {
-    }
 
     @Step("Логин пользователя")
     public static Response userLogin(DTOUserProfile DTOUserProfile) {

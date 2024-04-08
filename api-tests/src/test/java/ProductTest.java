@@ -1,4 +1,4 @@
-import dto.request.DTOUserProfile;
+import dto.DTOUserProfile;
 import endpoints.AuthApi;
 import endpoints.ProductsApi;
 import org.junit.jupiter.api.BeforeAll;

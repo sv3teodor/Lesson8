@@ -1,5 +1,5 @@
 import com.github.javafaker.Faker;
-import dto.request.DTOUserProfile;
+import dto.DTOUserProfile;
 import endpoints.AuthApi;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;

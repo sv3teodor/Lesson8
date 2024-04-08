@@ -20,11 +20,10 @@ public class DisappearingElementsPageAsserts extends AbstractAssert<Disappearing
     }
 
     @Step("Проверка количества элементов в Disappearing Elements")
-    public DisappearingElementsPageAsserts checkSize (int targetValue) {
+    public DisappearingElementsPageAsserts checkSize(int targetValue) {
         actual.disappearingElements.should(CollectionCondition.size(targetValue));
         return this;
     }
-
 
 
 }

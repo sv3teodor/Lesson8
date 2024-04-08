@@ -3,9 +3,9 @@ package pages;
 import com.codeborne.selenide.Condition;
 import io.qameta.allure.Step;
 import org.assertj.core.api.AbstractAssert;
-import org.assertj.core.api.Assertions;
 
-import static com.codeborne.selenide.Condition.*;
+import static com.codeborne.selenide.Condition.editable;
+import static com.codeborne.selenide.Condition.visible;
 
 public class InputsPageAsserts extends AbstractAssert<InputsPageAsserts, InputsPage> {
 
@@ -26,7 +26,7 @@ public class InputsPageAsserts extends AbstractAssert<InputsPageAsserts, InputsP
     public InputsPageAsserts checkAttributes(String attribName, String targetValue) {
         actual.input
                 .as("Значение аттрибута" + attribName + " не соответствует ожидаемому" + targetValue)
-                .should(Condition.attribute(attribName,targetValue));
+                .should(Condition.attribute(attribName, targetValue));
         return this;
     }
 
