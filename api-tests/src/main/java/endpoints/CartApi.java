@@ -1,6 +1,6 @@
 package endpoints;
 
-import dto.request.DTOProducts;
+import dto.DTOProducts;
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
 

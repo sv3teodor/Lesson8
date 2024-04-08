@@ -1,4 +1,3 @@
-import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
@@ -8,7 +7,7 @@ public class Tests extends BaseTest {
     @Test
     @DisplayName("Задание 1. Проверка чекбоксов")
     public void checkBoxesTest() {
-        int targetCheckBox=0;
+        int targetCheckBox = 0;
         homePage.clickCheckBoxesLink()
                 .clickCheckBox(targetCheckBox)
                 .check()
@@ -39,7 +38,7 @@ public class Tests extends BaseTest {
     @Test
     @DisplayName("Задание 4. Проверка Inputs")
     public void inputsTest() {
-        String  testString="123456789";
+        String testString = "123456789";
         homePage.clickInputsLink()
                 .check()
                 .inputCheckIsEditable()
@@ -47,7 +46,7 @@ public class Tests extends BaseTest {
                 .sendString(testString)
                 .check()
                 .inputCheckIsVisible()
-                .checkAttributes("value",testString);
+                .checkAttributes("value", testString);
     }
 
 
